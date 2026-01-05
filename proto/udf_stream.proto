@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message BigintValue {
+  int64 value = 1;
+}
+
+message AA{
+  int64 value = 1;
+}
+service TestService {
+  rpc asdf(AA) returns (stream BigintValue);
+}
